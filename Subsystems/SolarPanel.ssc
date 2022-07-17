@@ -1,0 +1,54 @@
+component SolarPanel
+
+    inputs
+        lambda = { 0, '1' }; % l:left
+    end
+
+    parameters(Access=private)
+        k = { 1.3805e-23, 'N*m/K'};
+        q = { 1.6e-19, 'C'};
+    end
+
+    parameters
+        Nps = { 8, '1' };           % Nps - Number of PV modules in parallel connection
+        Nss = { 300, '1' };         % Nss - Number of PV cells in series connection
+        T = { 298.15, 'K' };        % T - Threshold voltage proportional to TS
+        Tr = { 298.15, 'K' };       % Tr - Reference temperature
+        Isc = { 3.27, 'A' };        % Isc - Short circuit current at Tr
+        Kl = { 0.0017, 'A/K' };     % Kl - Short circuit current temperature coeff
+        Ior = { 2.0793e-6, 'A' };   % Ior - Irs at Tr
+        Ego = { 1.1, 'V' };         % Ego - band gap energy of the semiconductor
+        A = { 1.6, '1' };           % A - factor. cell deviation from de ideal pn junction
+    end
+
+    nodes
+        p = foundation.electrical.electrical; % +
+        n = foundation.electrical.electrical; % -
+    end
+
+    annotations
+        [p, n]  : Side = right;
+        lambda  : Side = left;
+    end
+
+    branches
+        i : n.i -> p.i;
+    end
+
+    variables
+        i = { 0, 'A' };
+        v = { 0, 'V' };
+    end
+
+    intermediates
+        Vt = k*T/q;
+        Iph = (Isc+Kl*(T-Tr))*lambda;
+        Irs = Ior*(T/Tr)^3*exp(q*Ego*(1/Tr-1/T)/(k*A));
+    end
+
+    equations
+        v == p.v - n.v;
+        i == Nps*(Iph-Irs*(exp(v/(Nss*Vt))-1))
+    end
+
+end
