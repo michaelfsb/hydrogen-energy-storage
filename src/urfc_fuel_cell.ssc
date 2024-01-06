@@ -23,8 +23,8 @@ component urfc_fuel_cell
         R_elect =  {0, 'Ohm*cm^2' };                % Area specific resistance between plates and connections #TODO: Add value
         I_limit_anode = { 15, 'A/cm^2' };           % Anode limiting current density
         I_limit_cathode = { 2.5, 'A/cm^2' };        % Cathode limiting current density
-        K_anodo = {0.0304 , 'V'};
-        K_catodo = {0.0507, 'V'};
+        A_anodo = {0.0304 , 'V'};
+        A_catodo = {0.0507, 'V'};
         T = { 353.15, 'K' };                 % Temperature of the cell
         R_gas = { 8.3145, 'J/(mol*K)' };     % Gas constant
         F_constant = { 96485, 'C/mol' };     % Faraday's constant
