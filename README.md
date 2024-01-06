@@ -1,18 +1,26 @@
 # Green Hydrogen Production
 
-**This project is in development**. It is my attempt to MathWorks' Excellence in Innovation [Project 204](https://github.com/mathworks/MathWorks-Excellence-in-Innovation/tree/main/projects/Green%20Hydrogen%20Production). This work will be part of my MSc in Automation and Systems Engineering at the Federal University of Santa Catarina. 
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=michaelfsb/green-hydrogen-production&file=src)
 
-## Subsystems
+## Overview
+This repository houses my contributions to MathWorks' Excellence in Innovation [Project 204](https://github.com/mathworks/MathWorks-Excellence-in-Innovation/tree/main/projects/Green%20Hydrogen%20Production), as part of my MSc in Automation and Systems Engineering at the Federal University of Santa Catarina. The project focuses on the development of a DC microgrid integrating a regenerative fuel cell with a photovoltaic panel.
 
-### Solar Panel 
+## Project Description
+The system is designed to explore the feasibility and efficiency of green hydrogen production. Detailed modeling of the components is available in `report.mlx`. To simulate the microgrid's behavior and performance, open the `microgrid.slx` file.
 
-![solar-panel](https://user-images.githubusercontent.com/31492967/179399809-d9263cd4-f10a-4095-8ca8-7a142736ec97.png)
-
-### Wind Turbine
-
-### Regenerative Fuel Cell
+## Authors
+- **Michael Barbosa** - Graduate Student, Universidade Federal de Santa Catarina
+- **Gustavo de Andrade** - Supervisor, Universidade Federal de Santa Catarina
 
 ## Dependencies
-- [MATLAB](https://www.mathworks.com/products/matlab.html) R2022a
+- [MATLAB](https://www.mathworks.com/products/matlab.html)
   - [Simulink](https://www.mathworks.com/products/simulink.html)
   - [Simscape](https://www.mathworks.com/products/simscape.html)
+
+## License
+This project is licensed under the [MIT License](LICENSE.md) - see the file for details.
+
+## Acknowledgments
+- MathWorks' Excellence in Innovation for the opportunity.
+- The Federal University of Santa Catarina for their support in my academic endeavors.
+
