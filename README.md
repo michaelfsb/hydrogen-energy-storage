@@ -6,11 +6,11 @@
 This repository houses my contributions to MathWorks' Excellence in Innovation [Project 204](https://github.com/mathworks/MathWorks-Excellence-in-Innovation/tree/main/projects/Green%20Hydrogen%20Production), as part of my MSc in Automation and Systems Engineering at the Federal University of Santa Catarina. The project focuses on the development of a DC microgrid integrating a regenerative fuel cell with a photovoltaic panel.
 
 ## Project Description
-The system is designed to explore the feasibility and efficiency of green hydrogen production. Detailed modeling of the components is available in `report.mlx`. To simulate the microgrid's behavior and performance, open the `microgrid.slx` file.
+The project delves into the feasibility and efficiency of green hydrogen as a sustainable energy storage solution in microgrids. It includes detailed modeling of key components documented in report.mlx for in-depth understanding and provides a microgrid.slx file for simulation to analyze the system's behavior and performance, thus fostering advancements in sustainable energy practices.
 
 ## Authors
-- **Michael Barbosa** - Graduate Student, Universidade Federal de Santa Catarina
-- **Gustavo de Andrade** - Supervisor, Universidade Federal de Santa Catarina
+- **Michael Barbosa** - Graduate Student, Federal University of Santa Catarina
+- **Gustavo de Andrade** - Supervisor, Federal University of Santa Catarina
 
 ## Dependencies
 - [MATLAB](https://www.mathworks.com/products/matlab.html)
