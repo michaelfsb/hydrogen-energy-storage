@@ -13,9 +13,14 @@ The project delves into the feasibility and efficiency of green hydrogen as a su
 - **Gustavo de Andrade** - Supervisor, Federal University of Santa Catarina
 
 ## Dependencies
+
 - [MATLAB](https://www.mathworks.com/products/matlab.html)
   - [Simulink](https://www.mathworks.com/products/simulink.html)
   - [Simscape](https://www.mathworks.com/products/simscape.html)
+
+## Demo
+
+<img width="998" alt="print_model" src="https://github.com/michaelfsb/green-hydrogen-production/assets/31492967/f2401160-7793-4df0-8541-a704b9127652">
 
 ## License
 This project is licensed under the [MIT License](LICENSE.md) - see the file for details.
