@@ -1,0 +1,10 @@
+<?xml-stylesheet href="defaultstyles.css" type="text/css"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:d="http://www.mathworks.com/blockgraphics" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg_1" width="154" height="154" d:options="ScalingOnResizeMax:2.0;Rotate:Off;Resize:FitToBlock">
+	<g id="part_2" title="part_0" ie-ports="left:simulink,top:,right:,bottom:">
+		<g id="Axis">
+			<path id="y_axis" class="path" d=" M 30.98,22 L 30.98,133"/>
+			<path id="x_axis" class="path" d=" M 16.5,118.52 L 127.5,118.52"/>
+		</g>
+		<path id="Wave" class="path" d=" M 30.980000301277006,77 Q 55.10999954741797,-3 79.23999879355894,77 Q 103.36999803969991,157 127.49999728584089,77"/>
+	</g>
+</svg>

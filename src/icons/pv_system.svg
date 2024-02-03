@@ -1,0 +1,11 @@
+<?xml-stylesheet href="defaultstyles.css" type="text/css"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:d="http://www.mathworks.com/blockgraphics" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg_1" width="389" height="400" d:options="PreserveAspect:On;ScalingOnResizeMax:2.0;Rotate:Off;Resize:FitToBlock">
+	<g id="part_2" title="part_0" ie-ports="left:,top:,right:simulink*simulink,bottom:">
+		<path id="ellipse_38" class="path" style="fill:#ffe894;" d=" M 101.5,92.03 C 120.829966243,92.03 136.5,107.92389138210001 136.5,127.53 C 136.5,147.1361086179 120.829966243,163.03 101.5,163.03 C 82.170033757,163.03 66.5,147.1361086179 66.5,127.53 C 66.5,107.92389138210001 82.170033757,92.03 101.5,92.03 Z"/>
+		<path id="rect_113" class="path" style="fill: #ebebeb;" d=" M 189.35293579101562,167.64706420898438 L 319.3529357910156,167.64706420898438 L 275.3529357910156,267.6470642089844 L 144.35293579101562,267.6470642089844 L 189.35293579101562,167.64706420898438 Z"/>
+		<line id="line_175" class="line" x1="166.17" y1="217.65" x2="297.54" y2="217.64"/>
+		<line id="line_176" class="line" x1="209.32" y1="267.65" x2="249.32" y2="267.65"/>
+		<line id="line_212" class="line" x1="209.32" y1="267.65" x2="249.32" y2="167.65"/>
+		<path id="Triangle" class="path" style="fill:#ffffff;" d=" M 319.35,167.65 L 315.1,249.21 L 275.35,267.65 L 319.35,167.65 Z"/>
+	</g>
+</svg>

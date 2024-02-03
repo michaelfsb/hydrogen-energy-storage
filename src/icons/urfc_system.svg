@@ -1,0 +1,30 @@
+<?xml-stylesheet href="defaultstyles.css" type="text/css"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:d="http://www.mathworks.com/blockgraphics" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg_1" width="400" height="357" d:options="PreserveAspect:On;ScalingOnResizeMax:2;Rotate:Off;Resize:FitToBlock">
+	<defs>
+		<style>
+			.font-size-extra-small {
+				font-size:35px;}
+					</style>
+	</defs>
+	<g id="part_3" title="part_0" ie-ports="left:,top:,right:network_engine_domain-foundation-electrical-electrical*network_engine_domain-foundation-electrical-electrical,bottom:">
+		<rect id="rect_31" class="rect" style="fill: #addef0;" x="84" y="114" width="84" height="108" rx="0" ry="0"/>
+		<path id="ellipse_59" class="path" style="fill: #c8e8b0;" d=" M 296.74,84 C 331.26,84 329.99,119.35 329.99,165 C 329.99,210.65 331.26,246 296.74,246 C 262.22,246 264.01,210.65 264.01,165 C 264.01,119.35 262.22,84 296.74,84 Z"/>
+		<g id="group_34">
+			<text id="text_32" class="text font-size-extra-small" x="276" y="138.03">
+				<tspan dx="0" dy="32.5" x="276">H</tspan>
+			</text>
+			<text id="text_33" class="text font-size-extra-small" style="baseline-shift:sub;" x="301.28" y="153.01">
+				<tspan dx="0" dy="32.5" x="301.28">2</tspan>
+			</text>
+		</g>
+		<rect id="rect_97" class="rect icon-editor-secondary-fill" x="72" y="102" width="12" height="132" rx="0" ry="0"/>
+		<rect id="rect_98" class="rect icon-editor-secondary-fill" x="168" y="102" width="12" height="132" rx="0" ry="0"/>
+		<line id="line_121" class="line ie-marker" data-start-params="scale:2x1;flipped:on" data-end-params="scale:2x1;flipped:off" style="marker-start: url(#triangleFilled_c2NhbGU6MngxO2ZsaXBwZWQ6b247);marker-end: url(#triangleFilled_c2NhbGU6MngxO2ZsaXBwZWQ6b2ZmOw==);stroke-linecap: butt;" x1="192" y1="168" x2="252" y2="168"/>
+		<line id="line_148" class="line" x1="95.82" y1="114" x2="95.82" y2="222"/>
+		<line id="line_149" class="line" x1="107.77" y1="114" x2="107.77" y2="222"/>
+		<line id="line_150" class="line" x1="120" y1="114" x2="120" y2="222"/>
+		<line id="line_151" class="line" x1="132" y1="114" x2="132" y2="222"/>
+		<line id="line_152" class="line" x1="144" y1="114" x2="144" y2="222"/>
+		<line id="line_153" class="line" x1="156" y1="114" x2="156" y2="222"/>
+	</g>
+</svg>

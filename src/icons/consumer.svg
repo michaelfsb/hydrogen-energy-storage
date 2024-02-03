@@ -1,0 +1,11 @@
+<?xml-stylesheet href="defaultstyles.css" type="text/css"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:d="http://www.mathworks.com/blockgraphics" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg_1" width="400" height="335" d:options="PreserveAspect:On;ScalingOnResizeMax:2.0;Rotate:Off;Resize:FitToBlock">
+	<g id="part_3" title="part_0" ie-ports="left:network_engine_domain-foundation-electrical-electrical*network_engine_domain-foundation-electrical-electrical,top:,right:,bottom:">
+		<rect id="rect_117" class="rect icon-editor-primary-fill" x="245.46" y="92.73" width="4" height="35.5" rx="0" ry="0"/>
+		<rect id="rect_76" class="rect" style="fill: #f0d3d3;" x="99.5" y="135.5" width="201" height="91.75" rx="0" ry="0"/>
+		<path id="Triangle" class="path" style="fill: #f5dabc;" d=" M 200,95.5 L 325.69,135.5 L 74.31,135.5 L 200,95.5 Z"/>
+		<rect id="rect_51" class="rect icon-editor-primary-fill" x="74.31" y="226.25" width="251.38" height="2" rx="0" ry="0"/>
+		<rect id="rect_101" class="rect" x="135" y="154.5" width="65" height="26.88" rx="0" ry="0"/>
+		<rect id="rect_102" class="rect" x="200" y="154.49" width="65" height="26.88" rx="0" ry="0"/>
+	</g>
+</svg>
