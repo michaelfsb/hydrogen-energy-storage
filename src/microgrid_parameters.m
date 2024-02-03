@@ -1,12 +1,8 @@
 load("input_data_24h.mat")
 
-BUS.Voltage = 300;
-
 URFC = urfc_parameters;
-
-% URFC.Electrolyzer.i_op = 15;
-% URFC.FuelCell.i_op = 6;
-% URFC.Tank.Initial = 180;
-
 PV = photovoltaic_parameters;
-
+BUS.Voltage = 300;                          % [V]
+URFC_TANK.MaxLvl = 1000;                     % [g]
+URFC_TANK.MinLvl = 0.2*URFC_TANK.MaxLvl;    % [g]
+URFC_TANK.IniLvl = 0.8*URFC_TANK.MaxLvl;    % [g]

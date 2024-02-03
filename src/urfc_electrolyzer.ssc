@@ -2,12 +2,16 @@ component urfc_electrolyzer
     % Electrolyzer mode model of a URFC
 
     outputs
-        h2 = { 0.0, 'mol/s' };    %H2
+        h2 = { 0.0, 'g/s' };    %H2
     end
 
     nodes
         p = foundation.electrical.electrical; % +
         n = foundation.electrical.electrical; % -
+    end
+
+    parameters(Access=private)
+        mmH2 = { 2.01588, 'g/mol'};
     end
 
     parameters
@@ -51,7 +55,7 @@ component urfc_electrolyzer
     equations
         v == p.v - n.v;
         v == N_cells*E_EL;
-        h2 == N_cells*i/F_constant;
+        h2 == mmH2*N_cells*i/F_constant;
     end
 end
 
