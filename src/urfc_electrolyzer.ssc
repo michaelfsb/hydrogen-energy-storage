@@ -13,7 +13,6 @@ component urfc_electrolyzer
     parameters
         N_cells = { 10, '1' };                      % Number of cells in the stack
         A_cell  = { 100, 'cm^2' };                  % Active cell area
-        alpha = {0.5, '1'};                         % Charge transfer coefficient
         E_rev_0 = { 1.23, 'V' };                    % Reversible potential of URPEMFC
         I_loss_internal = { 0.008, 'A/cm^2' };      % Lost internal current density
         I_o_anode = { 0.15, 'A/cm^2' };             % Anode exchange current density
