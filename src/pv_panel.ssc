@@ -53,7 +53,7 @@ component pv_panel
     equations
         v == p.v - n.v;
         v == (Nss*Vt*A*(lambertw_approx(exp(1)*(1+(Iph/Irs)))-1));
-        p_mppt == v*(Nps*(Iph-Irs*(exp(v/(Nss*Vt*A))-1)));
+        p_mppt == (v*(Nps*(Iph-Irs*(exp(v/(Nss*Vt*A))-1))));
     end
 end
 
