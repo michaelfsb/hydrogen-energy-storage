@@ -1,7 +1,7 @@
 component pv_panel
 
     inputs
-        lambda = { 0, '1' }; % l:left
+        lambda = { 0, '1' }; % R:left
     end
 
     outputs

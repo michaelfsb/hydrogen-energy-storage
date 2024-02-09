@@ -40,9 +40,9 @@ component urfc_fuel_cell
     end
 
     intermediates
-        I = i / A_cell;
+        I = abs(i) / A_cell;
         E_rev_FC = E_rev_0 + (R_gas * T) / (n_electrons * F_constant)*log((1 * .21^0.5) / 1);
-        E_act_total =  A_anodo * (approx_asinh((I_loss_internal + I) / I_o_anode)) + A_catodo * (approx_asinh((I_loss_internal + I) / I_o_cathode));
+        E_act_total =  A_anodo * (log((I_loss_internal + I) / I_o_anode)) + A_catodo * (log((I_loss_internal + I) / I_o_cathode));
         E_ohm_total = I * (R_elect + R_ion + R_CR);
         E_conc_total = (R_gas * T) / (n_electrons * F_constant) * (log(1 - (I / I_limit_anode)) + log(1 - (I / I_limit_cathode)));
         E_FC = E_rev_FC - E_act_total - E_ohm_total - E_conc_total;
@@ -59,8 +59,8 @@ component urfc_fuel_cell
     end
 end
 
-function approx = approx_asinh(x)
-    definitions
-        approx = log(x + sqrt(x^2 + 1))
-    end
-end
+% function approx = log(x)
+%     definitions
+%         approx = log(x + sqrt(x^2 + 1))
+%     end
+% end
