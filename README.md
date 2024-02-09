@@ -45,6 +45,7 @@ To run the simulation and analyze the system's behavior and performance, follow 
 
 The figure below shows the results of the simulation using the default scenario:
 
+![resultado](https://github.com/michaelfsb/green-hydrogen-production/assets/31492967/bd8c92ba-9ee3-412f-8c8d-299203a34cf7)
 
 ## Anylse other operation scenarios
 
@@ -59,7 +60,6 @@ Power Delivery Scenarios:
 - Only_Fuel_Cell: Only the fuel cell component of the URFC is powered.
 
 IMPORTANT: To improve the simulation time, make sure to check the "Interpolate data" option in the "Signal Editor" block.
-
 
 ### Solar Radiation and Power Demand
 
