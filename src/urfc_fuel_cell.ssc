@@ -1,8 +1,8 @@
 component urfc_fuel_cell
     % Fuel Cell mode model of a URFC
-
-    outputs
-        h2 = { 0.0, 'g/s' };    %H2
+    
+    inputs
+       h2_in = { 0.0, 'g/s' };    % H2_in 
     end
 
     nodes
@@ -20,10 +20,10 @@ component urfc_fuel_cell
         E_rev_0 = { 1.23, 'V' };                    % Reversible potential of URPEMFC
         I_loss_internal = { 0.008, 'A/cm^2' };      % Lost internal current density
         I_o_anode = { 0.15, 'A/cm^2' };             % Anode exchange current density
-        I_o_cathode = { 1.5e-4, 'A/cm^2' };         % Cathode exchange current density #TODO: Add value
+        I_o_cathode = { 1.5e-4, 'A/cm^2' };         % Cathode exchange current density
         R_ion = { 0.01, 'Ohm*cm^2' };               % Area specific ion resistance
         R_CR = { 0.03, 'Ohm*cm^2' };                % Area specific contact resistance
-        R_elect =  {0, 'Ohm*cm^2' };                % Area specific resistance between plates and connections #TODO: Add value
+        R_elect =  {0, 'Ohm*cm^2' };                % Area specific resistance between plates and connections
         I_limit_anode = { 15, 'A/cm^2' };           % Anode limiting current density
         I_limit_cathode = { 2.5, 'A/cm^2' };        % Cathode limiting current density
         A_anodo = {0.0304 , 'V'};
@@ -40,9 +40,10 @@ component urfc_fuel_cell
     end
 
     intermediates
-        I = abs(i) / A_cell;
-        E_rev_FC = E_rev_0 + (R_gas * T) / (n_electrons * F_constant)*log((1 * .21^0.5) / 1);
-        E_act_total =  A_anodo * (log((I_loss_internal + I) / I_o_anode)) + A_catodo * (log((I_loss_internal + I) / I_o_cathode));
+        %i = (h2_in*F_constant)/(mmH2*N_cells);
+        I = (h2_in*F_constant)/(mmH2*N_cells) / A_cell;
+        E_rev_FC = E_rev_0 + ((R_gas * T) / (n_electrons * F_constant)) * log((1 * .21^0.5) / 1);
+        E_act_total =  ((R_gas * T) / (0.5*n_electrons * F_constant)) * (log((I_loss_internal + I) / I_o_anode) + log((I_loss_internal + I) / I_o_cathode));
         E_ohm_total = I * (R_elect + R_ion + R_CR);
         E_conc_total = (R_gas * T) / (n_electrons * F_constant) * (log(abs(1 - (I / I_limit_anode))) + log(abs(1 - (I / I_limit_cathode))));
         E_FC = E_rev_FC - E_act_total - E_ohm_total - E_conc_total;
@@ -53,9 +54,12 @@ component urfc_fuel_cell
     end
 
     equations
+        if E_FC > 0
+            v == N_cells*E_FC;
+        else
+            v == 0;
+        end
         v == p.v - n.v;
-        v == N_cells*E_FC;
-        h2 == mmH2*N_cells*i/F_constant;
     end
 end
 
